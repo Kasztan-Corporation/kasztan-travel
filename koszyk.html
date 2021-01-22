@@ -24,26 +24,30 @@ $cmp = new Components();
 	<![endif]-->
 	<header class="flexbox bg-danger">
 		<div class="column m7">
-			<h1 class="d2">Kasztan Travel</h1>
-			<h2><i>Podróżuj z kasztanami!</i></h2>
-			<a href="#main"><button class="btn btn-success btn-lg">Zobacz teraz!</button></a>
-			<button class="btn btn-normal m2" disabled>Zaloguj się i buduj swój paszport! (Wkrótce!)</button>
+			<h1 class="d2">Kasztan Travel - Koszyk</h1>
 		</div>
 		<div class="column">
-			<img src="./hero.svg" decoding="async" loading="lazy" alt="Travel" class="img-fluid">
+			<img src="./external-content.duckduckgo.com.jpeg" decoding="async" loading="lazy" alt="Travel"
+				class="img-fluid">
 		</div>
 	</header>
 	<main class="container" id="main">
-		<h1>Oferty</h1>
-		<?php
-		$xmlstr = file_get_contents("hotels.xml");
-		$hotels = new SimpleXMLElement($xmlstr);
-		for ($i = 0; $i < sizeof($hotels); $i++) {
-			$cmp->listing($hotels->hotel[$i]["name"], $hotels->hotel[$i]["price"], $hotels->hotel[$i]["stars"], $hotels->hotel[$i]["country"]);
-		}
-		?>
+		<h1>Zapłać</h1>
+		<label for="pantadeusz">Cały Pan Taduesz (Wyrecytowany z pamięci!)</label>
+		<input type="text" name="pantadeusz" id="pantadeusz"><br><br>
+		<label for="password">Hasło do konta bankowego</label>
+		<input type="password" name="password" id="password"><br><br>
+		<button class="btn btn-block btn-normal" onmouseover="foo();">Zapłać</button>
 	</main>
-	<footer>Kasztan Technologia 2021</footer>
+	<script>
+		function foo() { /* skradzione z http://knome.org/ */
+			var randX = Math.floor(Math.random() * (window.innerWidth - 150));
+			var randY = Math.floor(Math.random() * (window.innerHeight - 100));
+			document.querySelector("button").style.position = "absolute";
+			document.querySelector("button").style.left = randX + "px";
+			document.querySelector("button").style.top = randY + "px";
+		}
+	</script>
 </body>
 
 </html>
