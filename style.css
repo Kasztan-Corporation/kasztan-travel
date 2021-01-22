@@ -1267,3 +1267,7 @@ header img {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
+main {
+    width: 75vw;
+}

@@ -33,7 +33,8 @@ $cmp = new Components();
 			<img src="./hero.svg" decoding="async" loading="lazy" alt="Travel" class="img-fluid">
 		</div>
 	</header>
-	<main>
+	<main class="container">
+		<h1>Oferty</h1>
 		<?php
 		$xmlstr = file_get_contents("hotels.xml");
 		$hotels = new SimpleXMLElement($xmlstr);
