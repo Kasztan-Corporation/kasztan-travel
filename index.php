@@ -34,7 +34,13 @@ $cmp = new Components();
 		</div>
 	</header>
 	<main>
-		
+		<?php
+		$xmlstr = file_get_contents("hotels.xml");
+		$hotels = new SimpleXMLElement($xmlstr);
+		for ($i = 0; $i < sizeof($hotels); $i++) {
+			$cmp->listing($hotels->hotel[$i]["name"], $hotels->hotel[$i]["price"], $hotels->hotel[$i]["stars"], $hotels->hotel[$i]["country"]);
+		}
+		?>
 	</main>
 	<footer></footer>
 </body>

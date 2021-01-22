@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <hotels>
-	<hotel name="Sieciuchy Hotel" price="75" country="Grecja" stars="9" stars2="10" />
-	<hotel name="Patelnias" price="30" country="Rosja" stars="5" stars2="7" />
-	<hotel name="Pod Mostem" price="5" country="Polska" stars="0" stars2="0" />
-	<hotel name="Kasztan Hotel" price="50" country="Kanada" stars="8" stars2="9" />
-	<hotel name="H Hotel" price="100" country="Japonia" stars="10" stars2="9" />
-	<hotel name="Oktober Hotel" price="60" country="Niemcy" stars="7" stars2="8" />
-	<hotel name="Eksklusywne Kasztany" price="400" country="USA" stars="10" stars2="5" />
-	<hotel name="Kasztany Kukanqa" price="47" country="Szwecja" stars="3" stars2="2" />
-	<hotel name="Hotel? Trivago" price="64" country="Norwegia" stars="7" stars2="6" />
+	<hotel name="Sieciuchy Hotel" price="75" country="Grecja" stars="9" />
+	<hotel name="Patelnias" price="30" country="Rosja" stars="5" />
+	<hotel name="Pod Mostem" price="5" country="Polska" stars="0" />
+	<hotel name="Kasztan Hotel" price="50" country="Kanada" stars="8" />
+	<hotel name="H Hotel" price="100" country="Japonia" stars="10" />
+	<hotel name="Oktober Hotel" price="60" country="Niemcy" stars="7" />
+	<hotel name="Eksklusywne Kasztany" price="400" country="USA" stars="10" />
+	<hotel name="Kasztany Kukanqa" price="47" country="Szwecja" stars="3" />
+	<hotel name="Hotel? Trivago" price="64" country="Norwegia" stars="7" />
 </hotels>
